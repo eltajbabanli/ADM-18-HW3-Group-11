@@ -4,5 +4,9 @@
 
 What you will find in our readme file?
 
-1.HW3.ipynb file that contains our code.
+  1._Homework3.ipynb_: It's the file that contains our code. It is well commented about the choise we pick for solve the problem
+  
+  2.Map.html: Is the html file of the map. The chunk of code for the building of the map is at the end of the Homework file.
+  This is the link to have a better view.
+  
 
