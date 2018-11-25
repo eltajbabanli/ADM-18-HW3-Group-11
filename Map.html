@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_d5beb94e019349eeb02b737a702d6cdc {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_d5beb94e019349eeb02b737a702d6cdc" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_d5beb94e019349eeb02b737a702d6cdc = L.map(
+        'map_d5beb94e019349eeb02b737a702d6cdc', {
+        center: [32.892048, -96.871741],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_6615c9d934f648a88819b5ee74618e47 = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+    
+        var marker_14e918b9158145dc86e9ef5f962338a1 = L.marker(
+            [32.892048, -96.871741],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_28d656a294a34c56af0941c9c996d39f = L.AwesomeMarkers.icon({
+                    icon: 'flag',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_14e918b9158145dc86e9ef5f962338a1.setIcon(icon_28d656a294a34c56af0941c9c996d39f);
+            
+    
+
+            var circle_88edc17239c74f9da77e0578a5436670 = L.circle(
+                [32.892048, -96.871741],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3186cc",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3186cc",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2000,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+            
+    
+        var marker_202549f4964e4bad8a3554760af62cd3 = L.marker(
+            [32.8933181190263, -96.8618881394887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_5db37ad882e0451a8248bfaa23770c69 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_202549f4964e4bad8a3554760af62cd3.setIcon(icon_5db37ad882e0451a8248bfaa23770c69);
+            
+    
+            var popup_db4a4e1eb4b5413fb4324ec8f06806e8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_16a66be815444f2384301019f53439b9 = $(`<div id="html_16a66be815444f2384301019f53439b9" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14124861?location=Coppell%2C%20TX>https://www.airbnb.com/rooms/14124861?location=Coppell%2C%20TX </a></div>`)[0];
+                popup_db4a4e1eb4b5413fb4324ec8f06806e8.setContent(html_16a66be815444f2384301019f53439b9);
+            
+
+            marker_202549f4964e4bad8a3554760af62cd3.bindPopup(popup_db4a4e1eb4b5413fb4324ec8f06806e8)
+            ;
+
+            
+        
+    
+        marker_202549f4964e4bad8a3554760af62cd3.bindTooltip(
+            `<div>`
+            + `<b>Private room & Bath in N. Dallas in quiet area.<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d3199f1a7e6146c3be64f0e0d623b634 = L.marker(
+            [32.8933181190263, -96.8618881394887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_c0c7a6d702614c158d9474aa2a0f047a = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d3199f1a7e6146c3be64f0e0d623b634.setIcon(icon_c0c7a6d702614c158d9474aa2a0f047a);
+            
+    
+            var popup_076fb8d9dac04bd0b42cf95525d6ebff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9cb004bada6d4fe9a1c73103e9290833 = $(`<div id="html_9cb004bada6d4fe9a1c73103e9290833" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14124861?location=Carrollton%2C%20TX>https://www.airbnb.com/rooms/14124861?location=Carrollton%2C%20TX </a></div>`)[0];
+                popup_076fb8d9dac04bd0b42cf95525d6ebff.setContent(html_9cb004bada6d4fe9a1c73103e9290833);
+            
+
+            marker_d3199f1a7e6146c3be64f0e0d623b634.bindPopup(popup_076fb8d9dac04bd0b42cf95525d6ebff)
+            ;
+
+            
+        
+    
+        marker_d3199f1a7e6146c3be64f0e0d623b634.bindTooltip(
+            `<div>`
+            + `<b>Private room & Bath in N. Dallas in quiet area.<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_668c1b23fc15406a8873c84b1ca51474 = L.marker(
+            [32.8949295039901, -96.86206701896309],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_136a89e32acb496aa058b0a789756957 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_668c1b23fc15406a8873c84b1ca51474.setIcon(icon_136a89e32acb496aa058b0a789756957);
+            
+    
+            var popup_357f3dafa1074dcd9d7f8c3ff804b45c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1b995a3256924d5fa1c5da2434406f07 = $(`<div id="html_1b995a3256924d5fa1c5da2434406f07" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14490601?location=Carrollton%2C%20TX>https://www.airbnb.com/rooms/14490601?location=Carrollton%2C%20TX </a></div>`)[0];
+                popup_357f3dafa1074dcd9d7f8c3ff804b45c.setContent(html_1b995a3256924d5fa1c5da2434406f07);
+            
+
+            marker_668c1b23fc15406a8873c84b1ca51474.bindPopup(popup_357f3dafa1074dcd9d7f8c3ff804b45c)
+            ;
+
+            
+        
+    
+        marker_668c1b23fc15406a8873c84b1ca51474.bindTooltip(
+            `<div>`
+            + `<b>Private room and bath in N. Dallas in quiet area.<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_19d0c3fad52c40e9a070f49fc0ed1011 = L.marker(
+            [32.8933181190263, -96.8618881394887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_c4d8d12bf4d644769293bafbc288ee5b = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_19d0c3fad52c40e9a070f49fc0ed1011.setIcon(icon_c4d8d12bf4d644769293bafbc288ee5b);
+            
+    
+            var popup_e8a4d06e5425489ab91423b44cb55b13 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_68da32ebf5fd467491c630cee291f147 = $(`<div id="html_68da32ebf5fd467491c630cee291f147" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14124861?location=Arlington%2C%20TX>https://www.airbnb.com/rooms/14124861?location=Arlington%2C%20TX </a></div>`)[0];
+                popup_e8a4d06e5425489ab91423b44cb55b13.setContent(html_68da32ebf5fd467491c630cee291f147);
+            
+
+            marker_19d0c3fad52c40e9a070f49fc0ed1011.bindPopup(popup_e8a4d06e5425489ab91423b44cb55b13)
+            ;
+
+            
+        
+    
+        marker_19d0c3fad52c40e9a070f49fc0ed1011.bindTooltip(
+            `<div>`
+            + `<b>Private room & Bath in N. Dallas in quiet area.<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2b9c9963684f49d19f8a87f4d46fa220 = L.marker(
+            [32.8820233239255, -96.87511098155849],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_e24da41a88654710bd73c61e539e69d4 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2b9c9963684f49d19f8a87f4d46fa220.setIcon(icon_e24da41a88654710bd73c61e539e69d4);
+            
+    
+            var popup_ce170f6c79d04abb8150a585c099dddb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4eb66eb95d094d349bc846a971d46e6b = $(`<div id="html_4eb66eb95d094d349bc846a971d46e6b" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/11804756?location=Addison%2C%20TX>https://www.airbnb.com/rooms/11804756?location=Addison%2C%20TX </a></div>`)[0];
+                popup_ce170f6c79d04abb8150a585c099dddb.setContent(html_4eb66eb95d094d349bc846a971d46e6b);
+            
+
+            marker_2b9c9963684f49d19f8a87f4d46fa220.bindPopup(popup_ce170f6c79d04abb8150a585c099dddb)
+            ;
+
+            
+        
+    
+        marker_2b9c9963684f49d19f8a87f4d46fa220.bindTooltip(
+            `<div>`
+            + `<b>Quiet room for rent.<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a6c1ba74aad7465283676f79a15ac9a0 = L.marker(
+            [32.9077810249579, -96.8621826243898],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_942f641ae4b348f99e1503fa6df865c0 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a6c1ba74aad7465283676f79a15ac9a0.setIcon(icon_942f641ae4b348f99e1503fa6df865c0);
+            
+    
+            var popup_4083e600a37945f6bd2329b0fd61fdb8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_75c63d11df964808891c38188def7797 = $(`<div id="html_75c63d11df964808891c38188def7797" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/6914091?location=Addison%2C%20TX>https://www.airbnb.com/rooms/6914091?location=Addison%2C%20TX </a></div>`)[0];
+                popup_4083e600a37945f6bd2329b0fd61fdb8.setContent(html_75c63d11df964808891c38188def7797);
+            
+
+            marker_a6c1ba74aad7465283676f79a15ac9a0.bindPopup(popup_4083e600a37945f6bd2329b0fd61fdb8)
+            ;
+
+            
+        
+    
+        marker_a6c1ba74aad7465283676f79a15ac9a0.bindTooltip(
+            `<div>`
+            + `<b>New 4 BD Organic MidMod Home<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_aeb60924b4fb4357ac0fd4e663c52422 = L.marker(
+            [32.8944793226889, -96.85326030618401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_16281a6c359541c5988d209d0e21f177 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aeb60924b4fb4357ac0fd4e663c52422.setIcon(icon_16281a6c359541c5988d209d0e21f177);
+            
+    
+            var popup_1d4192066a434f7cba0a1b1844ecaa5d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8a0277986f80491fa758ac41ca656bdc = $(`<div id="html_8a0277986f80491fa758ac41ca656bdc" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15069157?location=Addison%2C%20TX>https://www.airbnb.com/rooms/15069157?location=Addison%2C%20TX </a></div>`)[0];
+                popup_1d4192066a434f7cba0a1b1844ecaa5d.setContent(html_8a0277986f80491fa758ac41ca656bdc);
+            
+
+            marker_aeb60924b4fb4357ac0fd4e663c52422.bindPopup(popup_1d4192066a434f7cba0a1b1844ecaa5d)
+            ;
+
+            
+        
+    
+        marker_aeb60924b4fb4357ac0fd4e663c52422.bindTooltip(
+            `<div>`
+            + `<b>North Dallas private room<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_314ad01169ca4561be3e95dbbd2e44c9 = L.marker(
+            [32.8949295039901, -96.86206701896309],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_ba454cffa8d6407682f106eda12450c7 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_314ad01169ca4561be3e95dbbd2e44c9.setIcon(icon_ba454cffa8d6407682f106eda12450c7);
+            
+    
+            var popup_6d69b9923a4e44da909406d5daae0779 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_97f33d38078c4f5489c71e9401b731af = $(`<div id="html_97f33d38078c4f5489c71e9401b731af" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14490601?location=Addison%2C%20TX>https://www.airbnb.com/rooms/14490601?location=Addison%2C%20TX </a></div>`)[0];
+                popup_6d69b9923a4e44da909406d5daae0779.setContent(html_97f33d38078c4f5489c71e9401b731af);
+            
+
+            marker_314ad01169ca4561be3e95dbbd2e44c9.bindPopup(popup_6d69b9923a4e44da909406d5daae0779)
+            ;
+
+            
+        
+    
+        marker_314ad01169ca4561be3e95dbbd2e44c9.bindTooltip(
+            `<div>`
+            + `<b>Private room and bath in N. Dallas in quiet area.<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_86245e3e0a7848949ab9fbe2790cd845 = L.marker(
+            [32.8969128016987, -96.8695319039417],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_a4179c51e6854241abfedf1830db0eed = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_86245e3e0a7848949ab9fbe2790cd845.setIcon(icon_a4179c51e6854241abfedf1830db0eed);
+            
+    
+            var popup_21d136a784a04e058cb34120a5d0b1d7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d4d49ea515ac48f78ddfb8fca78c6fc2 = $(`<div id="html_d4d49ea515ac48f78ddfb8fca78c6fc2" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15913477?location=Addison%2C%20TX>https://www.airbnb.com/rooms/15913477?location=Addison%2C%20TX </a></div>`)[0];
+                popup_21d136a784a04e058cb34120a5d0b1d7.setContent(html_d4d49ea515ac48f78ddfb8fca78c6fc2);
+            
+
+            marker_86245e3e0a7848949ab9fbe2790cd845.bindPopup(popup_21d136a784a04e058cb34120a5d0b1d7)
+            ;
+
+            
+        
+    
+        marker_86245e3e0a7848949ab9fbe2790cd845.bindTooltip(
+            `<div>`
+            + `<b>Great location, updated house<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_be1498acdcb547589c4b2d53eb348ce2 = L.marker(
+            [32.901805911191104, -96.86800149482849],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_8f74edab168b4c01b5b9bf64c34d6d5a = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_be1498acdcb547589c4b2d53eb348ce2.setIcon(icon_8f74edab168b4c01b5b9bf64c34d6d5a);
+            
+    
+            var popup_f034b05c61fc4db4827f391ce9604938 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_da094749bde74e29886a92d992736b06 = $(`<div id="html_da094749bde74e29886a92d992736b06" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18021153?location=Addison%2C%20TX>https://www.airbnb.com/rooms/18021153?location=Addison%2C%20TX </a></div>`)[0];
+                popup_f034b05c61fc4db4827f391ce9604938.setContent(html_da094749bde74e29886a92d992736b06);
+            
+
+            marker_be1498acdcb547589c4b2d53eb348ce2.bindPopup(popup_f034b05c61fc4db4827f391ce9604938)
+            ;
+
+            
+        
+    
+        marker_be1498acdcb547589c4b2d53eb348ce2.bindTooltip(
+            `<div>`
+            + `<b>Club Coral - Home in North Dallas<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_aeeef3529851475ba86b90c901ea8a09 = L.marker(
+            [32.9031087655529, -96.8667337476207],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_45c95c4e4d9343759cda07b63cc20f81 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'darkred',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aeeef3529851475ba86b90c901ea8a09.setIcon(icon_45c95c4e4d9343759cda07b63cc20f81);
+            
+    
+            var popup_58383e0211264cf3acf90c90d8ebda1b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a504d71cad734d32bc7d2e2d07a99273 = $(`<div id="html_a504d71cad734d32bc7d2e2d07a99273" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/5106334?location=Addison%2C%20TX>https://www.airbnb.com/rooms/5106334?location=Addison%2C%20TX </a></div>`)[0];
+                popup_58383e0211264cf3acf90c90d8ebda1b.setContent(html_a504d71cad734d32bc7d2e2d07a99273);
+            
+
+            marker_aeeef3529851475ba86b90c901ea8a09.bindPopup(popup_58383e0211264cf3acf90c90d8ebda1b)
+            ;
+
+            
+        
+    
+        marker_aeeef3529851475ba86b90c901ea8a09.bindTooltip(
+            `<div>`
+            + `<b>Welcome to Dallas! Cozy 1 bedroom <b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9c0f31127f4941c388e20fc9dff15fbe = L.marker(
+            [32.8852465509118, -96.87014674082121],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_f0264a6a901d47f587aeb78854470082 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9c0f31127f4941c388e20fc9dff15fbe.setIcon(icon_f0264a6a901d47f587aeb78854470082);
+            
+    
+            var popup_44a6afe0105146dfa8285ded0c64ebf1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e85905a290364db9bc6aaeab929ab23a = $(`<div id="html_e85905a290364db9bc6aaeab929ab23a" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/18322453?location=Addison%2C%20TX>https://www.airbnb.com/rooms/18322453?location=Addison%2C%20TX </a></div>`)[0];
+                popup_44a6afe0105146dfa8285ded0c64ebf1.setContent(html_e85905a290364db9bc6aaeab929ab23a);
+            
+
+            marker_9c0f31127f4941c388e20fc9dff15fbe.bindPopup(popup_44a6afe0105146dfa8285ded0c64ebf1)
+            ;
+
+            
+        
+    
+        marker_9c0f31127f4941c388e20fc9dff15fbe.bindTooltip(
+            `<div>`
+            + `<b>Oasis in Northwest Dallas<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1e1ddaa048ce4838ad257291a8f9d93a = L.marker(
+            [32.883227682540806, -96.86105138861559],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_d143da6263a54e32a7ddc39ede6200e0 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1e1ddaa048ce4838ad257291a8f9d93a.setIcon(icon_d143da6263a54e32a7ddc39ede6200e0);
+            
+    
+            var popup_7593bc2ca2cd4f7a9c2d28566a7bba8b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_838108a1857345bb8eb0422f7edb4197 = $(`<div id="html_838108a1857345bb8eb0422f7edb4197" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/16685774?location=Addison%2C%20TX>https://www.airbnb.com/rooms/16685774?location=Addison%2C%20TX </a></div>`)[0];
+                popup_7593bc2ca2cd4f7a9c2d28566a7bba8b.setContent(html_838108a1857345bb8eb0422f7edb4197);
+            
+
+            marker_1e1ddaa048ce4838ad257291a8f9d93a.bindPopup(popup_7593bc2ca2cd4f7a9c2d28566a7bba8b)
+            ;
+
+            
+        
+    
+        marker_1e1ddaa048ce4838ad257291a8f9d93a.bindTooltip(
+            `<div>`
+            + `<b>Private Home with Pool<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_88552e9083344813bb0f43f076edadc9 = L.marker(
+            [32.877256063740894, -96.8757989788942],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_f3848a14d67d4e9b840fe0f457a26c5f = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_88552e9083344813bb0f43f076edadc9.setIcon(icon_f3848a14d67d4e9b840fe0f457a26c5f);
+            
+    
+            var popup_7212d68150ad4971b04830602618199b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_79776a133fc1497f93d0cc8fb1c9ba57 = $(`<div id="html_79776a133fc1497f93d0cc8fb1c9ba57" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/8213339?location=Addison%2C%20TX>https://www.airbnb.com/rooms/8213339?location=Addison%2C%20TX </a></div>`)[0];
+                popup_7212d68150ad4971b04830602618199b.setContent(html_79776a133fc1497f93d0cc8fb1c9ba57);
+            
+
+            marker_88552e9083344813bb0f43f076edadc9.bindPopup(popup_7212d68150ad4971b04830602618199b)
+            ;
+
+            
+        
+    
+        marker_88552e9083344813bb0f43f076edadc9.bindTooltip(
+            `<div>`
+            + `<b>Private second floor master<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_02d1b2acbf674d1fa4e76b093ba57f88 = L.marker(
+            [32.8981462981182, -96.8586509057892],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_5946718827a24c2aa602ecb997021912 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_02d1b2acbf674d1fa4e76b093ba57f88.setIcon(icon_5946718827a24c2aa602ecb997021912);
+            
+    
+            var popup_9af55e823cb943caafee4145c663080f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_04e032055cf44d98ab8fef403ad3c76d = $(`<div id="html_04e032055cf44d98ab8fef403ad3c76d" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/2539844?location=Addison%2C%20TX>https://www.airbnb.com/rooms/2539844?location=Addison%2C%20TX </a></div>`)[0];
+                popup_9af55e823cb943caafee4145c663080f.setContent(html_04e032055cf44d98ab8fef403ad3c76d);
+            
+
+            marker_02d1b2acbf674d1fa4e76b093ba57f88.bindPopup(popup_9af55e823cb943caafee4145c663080f)
+            ;
+
+            
+        
+    
+        marker_02d1b2acbf674d1fa4e76b093ba57f88.bindTooltip(
+            `<div>`
+            + `<b>Private Bed/Bath in mid-centuryhome<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e60a844a727d4877a2747bd9fffcfa74 = L.marker(
+            [32.9040282448911, -96.86996727735821],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_faf4dac2e30a4e0189d5294a8cbb97a3 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e60a844a727d4877a2747bd9fffcfa74.setIcon(icon_faf4dac2e30a4e0189d5294a8cbb97a3);
+            
+    
+            var popup_beb7c7426d014f65a66f94f905abcb76 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f846468117874cf59649bc0666f294ed = $(`<div id="html_f846468117874cf59649bc0666f294ed" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/15335459?location=Addison%2C%20TX>https://www.airbnb.com/rooms/15335459?location=Addison%2C%20TX </a></div>`)[0];
+                popup_beb7c7426d014f65a66f94f905abcb76.setContent(html_f846468117874cf59649bc0666f294ed);
+            
+
+            marker_e60a844a727d4877a2747bd9fffcfa74.bindPopup(popup_beb7c7426d014f65a66f94f905abcb76)
+            ;
+
+            
+        
+    
+        marker_e60a844a727d4877a2747bd9fffcfa74.bindTooltip(
+            `<div>`
+            + `<b>Club Coral - Private Room in North Dallas<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bbeb1c5763734a07b412a642618f279f = L.marker(
+            [32.8933181190263, -96.8618881394887],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_da5ca39819ae444cbe1dee050cd94e81 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bbeb1c5763734a07b412a642618f279f.setIcon(icon_da5ca39819ae444cbe1dee050cd94e81);
+            
+    
+            var popup_8579cf3d8bb543c5accdac6fc5d95f67 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7f65b1da75dc4055bd415b1d6282ae7c = $(`<div id="html_7f65b1da75dc4055bd415b1d6282ae7c" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14124861?location=Addison%2C%20TX>https://www.airbnb.com/rooms/14124861?location=Addison%2C%20TX </a></div>`)[0];
+                popup_8579cf3d8bb543c5accdac6fc5d95f67.setContent(html_7f65b1da75dc4055bd415b1d6282ae7c);
+            
+
+            marker_bbeb1c5763734a07b412a642618f279f.bindPopup(popup_8579cf3d8bb543c5accdac6fc5d95f67)
+            ;
+
+            
+        
+    
+        marker_bbeb1c5763734a07b412a642618f279f.bindTooltip(
+            `<div>`
+            + `<b>Private room & Bath in N. Dallas in quiet area.<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0351cc37d6ba4abda10ff709d4991340 = L.marker(
+            [32.8771344812899, -96.86328393723329],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_271deb03f0be4cd2ba01e89fb7c4cf29 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0351cc37d6ba4abda10ff709d4991340.setIcon(icon_271deb03f0be4cd2ba01e89fb7c4cf29);
+            
+    
+            var popup_114ef40b0d5c4b5fa777fe67559fba85 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9cf05b291ea549f3945f31c674074c05 = $(`<div id="html_9cf05b291ea549f3945f31c674074c05" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/11995979?location=Addison%2C%20TX>https://www.airbnb.com/rooms/11995979?location=Addison%2C%20TX </a></div>`)[0];
+                popup_114ef40b0d5c4b5fa777fe67559fba85.setContent(html_9cf05b291ea549f3945f31c674074c05);
+            
+
+            marker_0351cc37d6ba4abda10ff709d4991340.bindPopup(popup_114ef40b0d5c4b5fa777fe67559fba85)
+            ;
+
+            
+        
+    
+        marker_0351cc37d6ba4abda10ff709d4991340.bindTooltip(
+            `<div>`
+            + `<b>Dallas Love<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0ee5dce241714b56aa1b2f2efe5ae2b7 = L.marker(
+            [32.8920481255171, -96.8717408122603],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d5beb94e019349eeb02b737a702d6cdc);
+        
+    
+
+                var icon_b8d233cee8ca49e1a922bcc0e75172d0 = L.AwesomeMarkers.icon({
+                    icon: 'home',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0ee5dce241714b56aa1b2f2efe5ae2b7.setIcon(icon_b8d233cee8ca49e1a922bcc0e75172d0);
+            
+    
+            var popup_3f7e84d42186451182e6660d3e50559b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f36b6176da5142ac92f758983aa2f300 = $(`<div id="html_f36b6176da5142ac92f758983aa2f300" style="width: 100.0%; height: 100.0%;"><a href=https://www.airbnb.com/rooms/14058229?location=Addison%2C%20TX>https://www.airbnb.com/rooms/14058229?location=Addison%2C%20TX </a></div>`)[0];
+                popup_3f7e84d42186451182e6660d3e50559b.setContent(html_f36b6176da5142ac92f758983aa2f300);
+            
+
+            marker_0ee5dce241714b56aa1b2f2efe5ae2b7.bindPopup(popup_3f7e84d42186451182e6660d3e50559b)
+            ;
+
+            
+        
+    
+        marker_0ee5dce241714b56aa1b2f2efe5ae2b7.bindTooltip(
+            `<div>`
+            + `<b>Private Bedroom/Bathroom in Non Smoking Household<b>` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
